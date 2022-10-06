@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.App{
+  background:#000;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700 !important;
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+img, a {
+  transition: all 0.3s;
+}
+
+.container {
+  max-width: 1498px !important;
+}
+
+.section {
+  padding: 44px 0;
+}
+
+.no-padding-top {
+  padding-top: 0;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.black-bg-page {
+  background-color: #121212;
+}
+
+.primary-color {
+  color: #f7c51e;
+}
+
+
+.btn {
+  transition: all 0.3s;
+  text-transform: uppercase;
+  border-radius: 0px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border: none;
+}
+.btn.large-btn {
+  padding: 17px 45px;
+}
+.btn-primary {
+  background-color: #f7c51e;
+  color: #000000;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #121212;
+}
+.btn-primary.style-2:hover {
+  color: #121212;
+  background-color: #fff;
+}
+.btn-secondary {
+  background-color: #121212;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #f7c51e;
+  color: #000000;
+}
+
+.page-content {
+  margin-bottom: 42px;
+}
+.page-content .title {
+  text-shadow: 18px 20px rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+.page-content .title.style-2 span {
+  color: #f7c51e;
+  text-shadow: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.page-content .title.style-2 h2 {
+  text-transform: uppercase;
+}
+.page-content .title h2 {
+  font-size: 64px;
+}
+.page-content .title h2 span {
+  color: #f7c51e;
+  display: block;
+  text-shadow: 18px 20px rgba(247, 197, 30, 0.1);
+}
+.page-content p {
+  max-width: 600px;
+  text-align: justify;
+}
+
+.timeline {
+  padding:159px 0 74px 0;
+  .swiper-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .swiper-wrapper {
+    transition: 2s cubic-bezier(0.68, -0.4, 0.27, 1.34) 0.2s;
+  }
+
+  .swiper-slide {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    margin-bottom: 130px;
+    .price-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 38px;
+      .fourth-fifth-price{
+        margin-left:106px;
+        .small-price{
+          display: flex;
+          margin-bottom: 18px;
+          .small-image{
+            position: relative;
+            padding-left: 5px;
+            &::before{
+              content: "";
+              position: absolute;
+              width: 2px;
+              height: 18px;
+              background: #f7c51e;
+              left: 0;
+              top: 40%;
+              transform: translateY(-50%);
+            }
+          }
+          p{
+            margin-left: 13px;
+            span{
+              font-weight: 600;
+              color:#f7c51e;
+            }
+          }
+        }
+      }
+    }
+    .tournament-info{
+      display: flex;
+      padding:0 109px;
+      .tournament-image{
+        flex-shrink: 0;
+      }
+      .tournament-content{
+        h3{
+          font-size: 24px;
+          margin-bottom: 17px;
+        }
+        p{
+          margin-bottom: 20px;
+        }
+        .time-sponsor{
+          display: flex;
+          align-items: center;
+          .sponsor{
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            p{
+              font-weight: 700;
+              font-size: 20px;
+              color:#f7c51e;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-pagination {
+    right: 15% !important;
+    font-size: 18px;
+    z-index: 1;
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-transform:uppercase;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 13px;
+      border-radius:20px;
+      width: 100%;
+      background-color: #f7c51e;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    opacity: 1;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    margin-right: 20px !important;
+    padding-top: 60px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,-15%);
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      background-color: #f7c51e;
+      transition: .2s;
+      border:4px solid #fff;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #f7c51e;
+    font-weight: 700;
+    &::before {
+      content: "";
+      background: #000;
+      background-clip: padding-box;
+      border: 4px solid transparent;
+      box-shadow: 0 0 0 2px white, 0 0 0 7px #000;
+      padding: 8px;
+      width: 17px;
+      height: 17px;
+      top: -2px;
+    }
+    &::after{
+      content:url('../src/Assets/Img/arrow.png');
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next{
+    width: 42px;
+    height: 26px;
+    z-index: 2;
+    top: unset;
+    bottom: 15%;
+    background-image:none;
+    color:#f7c51e;
+    border:1px solid #f7c51e;
+    &.swiper-button-disabled{
+      color:#fff;
+      border:1px solid #fff;
+      opacity: 1;
+    }
+    i{
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      left: 50%;
+    }
+  } 
+  .swiper-button-prev {
+    right: 0%;
+    left: 93%;
+  }
+
+}

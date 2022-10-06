@@ -1,0 +1,117 @@
+@media screen and (max-width: 1500px) {
+    .container {
+      padding: 0 15px;
+    }
+    .nav ul.nav-list > li.dropdown > a::before {
+      font-size: 12px;
+    }
+    .nav ul.nav-list > li > a {
+      font-size: 16px;
+    }
+    .timeline .swiper-button-prev {
+      left: 90%;
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    .welcome-item-wrapper,
+  .video-wrapper {
+      width: 60%;
+    }
+    .page-content .title {
+      text-shadow: 8px 10px rgba(255, 255, 255, 0.1);
+    }
+    .page-content .title > span {
+      font-size: 14px;
+    }
+    .page-content .title h2 {
+      font-size: 40px !important;
+    }
+    .page-content .title h2 span {
+      text-shadow: 8px 10px rgba(255, 255, 255, 0.1);
+    }
+    .page-content p {
+      margin-bottom: 24px;
+    }
+    .timeline {
+      padding-bottom: 40px;
+    }
+    .timeline .page-content {
+      display: block;
+    }
+    .timeline .swiper-slide .price-wrapper {
+      display: block;
+    }
+    .timeline .swiper-slide .price-wrapper > * {
+      display: inline-block;
+    }
+    .timeline .swiper-slide .price-wrapper .fourth-fifth-price {
+      margin-left: 56px;
+    }
+    .timeline .swiper-slide .tournament-info {
+      padding: 0;
+      flex-direction: column;
+    }
+    .timeline .swiper-slide .tournament-info .tournament-image {
+      margin: 0 auto;
+    }
+    .timeline .swiper-button-prev, .timeline .swiper-button-next {
+      bottom: 50%;
+    }
+    .timeline .swiper-button-prev.swiper-button-prev, .timeline .swiper-button-next.swiper-button-prev {
+      left: 0;
+    }
+    .timeline .swiper-pagination::before {
+      content: none;
+    }
+    .timeline .swiper-pagination .swiper-pagination-bullet {
+      display: none;
+      padding: 0;
+    }
+    .timeline .swiper-pagination .swiper-pagination-bullet-active::before, .timeline .swiper-pagination .swiper-pagination-bullet-active::after {
+      content: none;
+    }
+    .welcome-section .welcome-event {
+      display: block;
+    }
+    .welcome-section .welcome-event .welcome-item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    .welcome-section .welcome-event .welcome-item.league img {
+      width: 100%;
+    }
+    .welcome-section .welcome-event .welcome-item .battle-team {
+      padding-bottom: 30px;
+    }
+    .feature-video-section .video-item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    .feature-new-section .news-item {
+      margin-bottom: 30px;
+    }
+    footer .footer-items .footer-left {
+      transform: translateY(0px);
+    }
+    footer .footer-items .footer-left .footer-content {
+      padding: 0 15px 20px;
+    }
+    footer .footer-items .footer-right {
+      padding: 53px 0 0;
+    }
+    footer .footer-items .footer-right .footer-working-hour-support {
+      margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .timeline .swiper-slide .price-wrapper .fourth-fifth-price {
+      margin-top: 20px;
+      margin-left: 26px;
+    }
+    .welcome-item-wrapper,
+  .video-wrapper {
+      width: 100%;
+    }
+    .scroll-to-top {
+      width: 50px;
+      height: 50px;
+    }
+  }/*# sourceMappingURL=responsive.css.map */
